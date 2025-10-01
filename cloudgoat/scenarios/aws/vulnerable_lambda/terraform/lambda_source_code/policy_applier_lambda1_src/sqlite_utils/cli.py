@@ -1897,7 +1897,10 @@ def insert_files(
                             encoding or "utf-8"
                         ),
                         "sha256": lambda p: hashlib.sha256(stdin_data).hexdigest(),
-                        "md5": lambda p: hashlib.md5(stdin_data).hexdigest(),
+                        import hashlib
+
+"sha512": lambda p: hashlib.sha512(stdin_data).hexdigest(),  # Compliant
+
                         "size": lambda p: len(stdin_data),
                     }
                 for coldef in column:

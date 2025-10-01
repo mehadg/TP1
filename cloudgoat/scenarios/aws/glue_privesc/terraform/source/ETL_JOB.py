@@ -49,11 +49,11 @@ print(all_fields_selected)
 
 # DynamicFrame을 RDS(PostgreSQL)로 쓸 때 필요한 설정
 connection_options = {
-    "url": jdbc_url,
+     "url": os.getenv("JDBC_URL"),                 # récupéré depuis variable d’environnement
     "dbtable": "original_data",
-    "user": "postgres",
-    "password": "bob12cgv",
-    "database": "bob12cgvdb",
+    "user": os.getenv("DB_USER", "postgres"),     # valeur par défaut = postgres
+    "password": os.getenv("DB_PASS"),             # mot de passe depuis variable d’environnement
+    "database": os.getenv("DB_NAME", "bob12cgvdb"),
 }
 
 connection_properties = {"user": "postgres", "password": "bob12cgv"}

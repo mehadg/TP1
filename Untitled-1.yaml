@@ -1,0 +1,16 @@
+stages:
+  - analysis
+
+sonarcloud-check:
+  stage: analysis
+  image:
+    name: sonarsource/sonar-scanner-cli:latest
+    entrypoint: [""]
+  script:
+    - sonar-scanner
+      -Dsonar.projectKey=TP1-CloudGoat        # clé de ton projet SonarCloud
+      -Dsonar.organization=poly-tp1           # ton organisation SonarCloud
+      -Dsonar.host.url=https://sonarcloud.io
+      -Dsonar.login=${SONAR_TOKEN}            # variable CI/CD ajoutée dans GitLab
+  only:
+    - main

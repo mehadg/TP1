@@ -73,16 +73,38 @@ resource "aws_iam_policy" "lambdaManager_policy" {
     Version = "2012-10-17"
     Statement = [
       {
-        Sid    = "lambdaManager"
+        Sid    = "AllowLimitedLambdaActions"
+        Effect = "Allow"
+        # Actions réduites aux opérations réellement nécessaires
+        Action = [
+          "lambda:InvokeFunction",
+          "lambda:GetFunctionConfiguration",
+          "lambda:UpdateFunctionCode"
+        ]
+        # Limiter aux fonctions Lambda portant ton préfixe (ou lister les ARNs exacts)
+        Resource = [
+          "arn:aws:lambda:${var.aws_region}:${var.account_id}:function:cg-*"
+        ]
+      },
+      {
+        Sid    = "AllowPassSpecificRole"
         Effect = "Allow"
         Action = [
-          "lambda:*",
           "iam:PassRole"
         ]
-        Resource = "*"
+        # Autoriser PassRole uniquement pour le rôle d'exécution Lambda défini dans ce module
+        Resource = [
+          aws_iam_role.debug_role.arn
+        ]
       }
     ]
   })
+
+  tags = {
+    Name = "cg-lambdaManager-policy-${var.cgid}"
+  }
+}
+
 
   tags = {
     Name = "cg-lambdaManager-policy-${var.cgid}"

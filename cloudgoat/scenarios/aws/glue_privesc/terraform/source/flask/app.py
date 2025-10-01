@@ -30,14 +30,28 @@ def file_filtering(filename):
         return False
 
 
-def upload_to_s3(file, bucket_name, filename):
+def upload_to_s3(file, bucket_name, filename, expected_owner):
     try:
         cur.execute("delete from cc_data")
         db.conn.commit()
-        s3_connect.upload_fileobj(file, bucket_name, filename)
+
+        # Create a new S3 client
+        s3_client = boto3.client('s3')
+
+        # Upload the file to S3 with ExpectedBucketOwner
+        s3_client.upload_fileobj(
+            Fileobj=file,
+            Bucket=bucket_name,
+            Key=filename,
+            ExtraArgs={'ExpectedBucketOwner': expected_owner}
+        )
+
+        # Render the template with loader_display set to "block"
         loader_display = "block"
         return render_template("upload.html", loader_display=loader_display)
+        
     except Exception as e:
+        # Handle exceptions and render the template with loader_display set to "none"
         loader_display = "none"
         return render_template("upload.html", loader_display=loader_display)
 

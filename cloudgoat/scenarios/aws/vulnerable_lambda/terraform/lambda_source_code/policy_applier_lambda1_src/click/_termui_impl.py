@@ -599,12 +599,31 @@ def open_url(url: str, wait: bool = False, locate: bool = False) -> int:
             return c.wait()
         return 0
     except OSError:
-        if url.startswith(("http://", "https://")) and not locate and not wait:
-            import webbrowser
+        
+        import urllib.parse
+import webbrowser
 
+def open_url(url, locate=False, wait=False):
+    try:
+        parsed = urllib.parse.urlparse(url)
+
+        # Autoriser uniquement certains schémas (whitelist stricte)
+        allowed_schemes = {"http", "https"}
+        if parsed.scheme not in allowed_schemes:
+            raise ValueError(f"Schéma non autorisé : {parsed.scheme}")
+
+        # Exemple supplémentaire : interdire usernames/passwords dans l'URL
+        if parsed.username or parsed.password:
+            raise ValueError("Identifiants intégrés dans l'URL interdits")
+
+        # Ouvrir seulement si tout est validé
+        if not locate and not wait:
             webbrowser.open(url)
             return 0
+    except Exception as e:
+        print(f"[ERREUR] URL invalide ou non autorisée : {e}")
         return 1
+
 
 
 def _translate_ch_to_exc(ch: str) -> t.Optional[BaseException]:
