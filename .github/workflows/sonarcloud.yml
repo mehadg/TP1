@@ -30,9 +30,9 @@ name: SonarCloud analysis
 
 on:
   push:
-    branches: [ "Scenario-Redesign" ]
+    branches: [ "Dependabot/pip/requests 2.32.4" ]
   pull_request:
-    branches: [ "Scenario-Redesign" ]
+    branches: [ "Dependabot/pip/requests 2.32.4" ]
   workflow_dispatch:
 
 permissions:
