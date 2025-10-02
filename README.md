@@ -1,4 +1,6 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mehadg_TP1&metric=alert_status&branch=feature%2Fadd-sonar-badge)](https://sonarcloud.io/dashboard?id=mehadg_TP1&branch=feature%2Fadd-sonar-badge)
+(Invoke-WebRequest -Uri "https://sonarcloud.io/api/project_badges/measure?project=mehadg_TP1&metric=alert_status&branch=feature%2Fadd-sonar-badge" -Method Head).StatusCode
+
 
 
 _CloudGoat is Rhino Security Labs' "Vulnerable by Design" cloud deployment tool._
