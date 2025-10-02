@@ -1,3 +1,4 @@
+﻿[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mehadg_TP1&metric=alert_status&branch=feature%2Fadd-sonar-badge)](https://sonarcloud.io/dashboard?id=mehadg_TP1&branch=feature%2Fadd-sonar-badge)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mehadg_TP1&metric=alert_status&branch=feature%2Fadd-sonar-badge)](https://sonarcloud.io/dashboard?id=mehadg_TP1&branch=feature%2Fadd-sonar-badge)
 
 
@@ -26,11 +27,11 @@ CloudGoat is Rhino Security Labs' "Vulnerable by Design" cloud deployment tool. 
 
 Below are our main goals for CloudGoat:
 
-* **Focused, Curated, High-Quality Learning Experiences** - Each of CloudGoatâ€™s scenarios should provide the opportunity for experimentation, exploration, and building hands-on cloud security skills.
-* **Good Documentation** - We've done our best to ensure that CloudGoatâ€™s scenarios are well-documented and easy to understand and evaluate in terms of difficulty, content, structure, and skills-required.
+* **Focused, Curated, High-Quality Learning Experiences** - Each of CloudGoatÃ¢â‚¬â„¢s scenarios should provide the opportunity for experimentation, exploration, and building hands-on cloud security skills.
+* **Good Documentation** - We've done our best to ensure that CloudGoatÃ¢â‚¬â„¢s scenarios are well-documented and easy to understand and evaluate in terms of difficulty, content, structure, and skills-required.
 * **Easy to Install and Use** - We understand that CloudGoat is a means to an end - learning and practicing cloud security penetration testing. Therefore, we aim to keep things simple, straightforward, and reliable.
 * **Modularity** - Each scenario is a standalone learning environment with a clear goal (or set of goals), and CloudGoat is able to start up, reset, or shut down each scenario independently.
-* **Expandability** - CloudGoatâ€™s core components (python app and scenarios) are designed to permit easy and independent expansion - by us or the community.
+* **Expandability** - CloudGoatÃ¢â‚¬â„¢s core components (python app and scenarios) are designed to permit easy and independent expansion - by us or the community.
 
 Before you proceed, please take note of these warnings!
 
@@ -271,7 +272,7 @@ The attacker steals the credentials present on the webpage via a SQL injection a
 ### rce_web_app (Hard)
 `cloudgoat create rce_web_app`
 
-Starting as the IAM user Lara, the attacker explores a Load Balancer and S3 bucket for clues to vulnerabilities, leading to an RCE exploit on a vulnerable web app which exposes confidential files and culminates in access to the scenarioâ€™s goal: a highly-secured RDS database instance.
+Starting as the IAM user Lara, the attacker explores a Load Balancer and S3 bucket for clues to vulnerabilities, leading to an RCE exploit on a vulnerable web app which exposes confidential files and culminates in access to the scenarioÃ¢â‚¬â„¢s goal: a highly-secured RDS database instance.
 
 Alternatively, the attacker may start as the IAM user McDuck and enumerate S3 buckets, eventually leading to SSH keys which grant direct access to the EC2 server and the database beyond.
 
@@ -429,3 +430,4 @@ And lastly, thank you for contributing!
 ## Disclaimer
 
 CloudGoat is software that comes with absolutely no warranties whatsoever. By using CloudGoat, you take full responsibility for any and all outcomes that result.
+
