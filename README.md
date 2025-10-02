@@ -1,4 +1,5 @@
-# CloudGoat (☁️🐐)
+﻿[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mehadg_TP1&metric=alert_status)](https://sonarcloud.io/dashboard?id=mehadg_TP1)
+# CloudGoat (â˜ï¸ðŸ)
 [![Rhino](https://img.shields.io/badge/rhino-vulnerable%20%7C%20tool-red?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAAxCAQAAAA7SZLuAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjCAkMIR33/0eZAAAGdUlEQVRYw+XXa5DWZRkG8GuXBVyE5bSAIowgHtY0E0wzMzE1ZyQVzTIdNTXLQ05OnlKTodDQxulgM5HpWAMxGurIIJhnUhI0DyAlphECogIZCAvL7rLL7q8P+y7uuu/CwuSn7vfb+3+e57qv+7kP15N8wib6GiBJUrr9r4hPBm//XJ6yNmeLHqoM6BrgrrgmxlrpC6KVWZKGlOaGnJeKnR0j6Z/T07PLzCqzby5og1TwdrQXPeVk3YvDiSgz2oNe0LfLMbgOy+yrw4cjvaXanYa18hNRqpdKoxzrMjOsxeLWS98pWImpaDBeET9O8h4WOFqUOdA5JvujZ71utXpN3jRFtfn27CLYQIvU4UeKfIyL1eAtF7nLu7ZpsQbveNh37O1KTFeq+OFR9tGti2NVm2WD+5SWtV9cEsl9OTxX5aDck+5pzvosz9IszYpUpzxLMzzXJnk1zZ2Q6Z+xmZOmFqgkJ6Yks3JE9soeZUWWN+SJfDu9UpO5mZMVGZiqHJJTsjUPZXl+mZFZl/lJSRFeSU7MBXkydduhv5I383IaUlEkf8UgT+NJx+ntbPNs0ehV1xthmMfBLHt0EsSB5lnUkqkiTlNvosH+ZbHKYjG/WqN7DTTEXWptM885Bohh5oBaZxWrRRE3YKF+BbAeHrDeaHtZYZGBxXgtNFM/VZ7GBje39BVDzCqkyiN6dwJ1ovdt8ZxehR4zVrUZuhllrRdUdNwyzmuqfNrL2OgS3USUu6cA9b5jOvIScbDFlnjK/UpF9HS/OuPEkWo8pmfHLRN8zwivoNmtBag4Xx3Y5NJOoPb1jGoXmeuHhT2n2mKWXmI8ft+xqLu73t6GeRHLjCjEvre5BV6TdSsKtZ8n1LvOUZY7Xst1zFPtJBHXY2JHsB6qlIhDPW6DiwsBqbJmO9jHeIkYY746E/Vwq5f0FyUmYooyUeo+nFusXbX++rvUTJfrK0ZbXwB7xWAfj8XZltnoat2N8GYhiCdb7+9GFVJriY3G7KC9iagwxr5iH1eZBraZ0DoTROxvihpLnaWb+LG3HSgOsMhG47XmaJ3XDNxpLy0sLxEj/Q1s9muf1UtPB7vZ2+rNcEhhQL1jkhhstgY3FK4gbse9Sro0bEXsoaev2lgI5npzPeZ9jZ5zdqGqenvIa4YZYLpGv1BeSK7BFuH8Lk72wlFf83WTCwXQajW+vJ371f7jDEM9YKtf6bO9YX1Do5VGdVnfiBjqWTNMtakd3MMqRYy32m1OsMAWt7TOOtHLbPyhY8HsDO5GLPBTL2vcDtbkEWOdZ5U3TLPOKhe2S6BxNqt3xi4qN3G6Rix0pnP9qU1AN6tFoyZzjG43OPt4FPP130WRKMZp0GSzpc7Qxzct1d42OVbb9XGhetuKNbidg52kwRLHmGKd3/i8L/m5lyy3yipbwR3K2oTwAK/jBYOKqY9+zuy89MQoK6zxA7dZhxo/Uaav4UYa4U7NqHZZSyqIPU1DrXOK8BLjrHHkDhRjd5dZpkmdtf7qFsPbyL29PQuqTTJEdDdBA6a21FvHwyaodcwOwCoc4hSnOU6Vvm07gojDLS40tIXucLdNWGj/4rzit3SQkl2/0TjC85rbJMzbjiuaGiKm4qbdfctoaU3XeL5QFEta5lpbayv365J8MeW7B5VkUI7Oe7kyM5O8myvy3MflXlvduDbJ5zImCxTRhDu1kvTLPjk3FdmQ5vwsz3dUlqWtK5MsTXMG5Ird4xYZmaMzPR/m+LybOdmRw+JQa1Hr8i7Onva7y8zECpNs8Y/287xdGCVJ74xIbZLy3JItuV/TLoZSGvOXVOczWZuyTmkV3mWz1WxP2o0mG7oreSniAlMdYJZ/W6JSp8tOtRLNGm21VSOaLHajI/RrUY5dgqtwrX3MpkUTd7QSyadyW5ryRlZmfRqSVOSSnJBukQ1ZkeVZnfXZksZsi5Ql6ZbSJNvSkE1ZnWVZk+aSFocG5qDMzJDcle8WTRDR36CP/BdR6fteVWvnVuefbrdXQRz0Mh21Ti8ejaIXKUkqMyZHpSpD0zc9UxJpzNbUZlM+yIepTWn6Z2QOy/CUZmquSH265Zrcmp55MN/Kll1OL1GqXD+VBhlkgD7KWx+xhTmwn5t8YJ3D9HCNTfhz0eb7v7DCo2OdSaapV+PujwbPJwNX7lHUe8ppeu4IqKzLp3ZudZmX5Hd5JpuzO111F7n1a1HF/7/2X2NRZh03N5mKAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTA4LTA5VDEyOjMzOjI5LTA0OjAwAcixjwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wOC0wOVQxMjozMzoyOS0wNDowMHCVCTMAAAAASUVORK5CYII=)](https://rhinosecuritylabs.com) [![PyPI](https://img.shields.io/badge/python-3.9+-blue.svg)](https://github.com/RhinoSecurityLabs/cloudgoat) [![GitHub license](https://img.shields.io/badge/license-BSD-brightgreen.svg)](https://github.com/RhinoSecurityLabs/cloudgoat/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/RhinoSecurityLabs/cloudgoat/pulls)
 
 _CloudGoat is Rhino Security Labs' "Vulnerable by Design" cloud deployment tool._
@@ -24,11 +25,11 @@ CloudGoat is Rhino Security Labs' "Vulnerable by Design" cloud deployment tool. 
 
 Below are our main goals for CloudGoat:
 
-* **Focused, Curated, High-Quality Learning Experiences** - Each of CloudGoat’s scenarios should provide the opportunity for experimentation, exploration, and building hands-on cloud security skills.
-* **Good Documentation** - We've done our best to ensure that CloudGoat’s scenarios are well-documented and easy to understand and evaluate in terms of difficulty, content, structure, and skills-required.
+* **Focused, Curated, High-Quality Learning Experiences** - Each of CloudGoatâ€™s scenarios should provide the opportunity for experimentation, exploration, and building hands-on cloud security skills.
+* **Good Documentation** - We've done our best to ensure that CloudGoatâ€™s scenarios are well-documented and easy to understand and evaluate in terms of difficulty, content, structure, and skills-required.
 * **Easy to Install and Use** - We understand that CloudGoat is a means to an end - learning and practicing cloud security penetration testing. Therefore, we aim to keep things simple, straightforward, and reliable.
 * **Modularity** - Each scenario is a standalone learning environment with a clear goal (or set of goals), and CloudGoat is able to start up, reset, or shut down each scenario independently.
-* **Expandability** - CloudGoat’s core components (python app and scenarios) are designed to permit easy and independent expansion - by us or the community.
+* **Expandability** - CloudGoatâ€™s core components (python app and scenarios) are designed to permit easy and independent expansion - by us or the community.
 
 Before you proceed, please take note of these warnings!
 
@@ -269,7 +270,7 @@ The attacker steals the credentials present on the webpage via a SQL injection a
 ### rce_web_app (Hard)
 `cloudgoat create rce_web_app`
 
-Starting as the IAM user Lara, the attacker explores a Load Balancer and S3 bucket for clues to vulnerabilities, leading to an RCE exploit on a vulnerable web app which exposes confidential files and culminates in access to the scenario’s goal: a highly-secured RDS database instance.
+Starting as the IAM user Lara, the attacker explores a Load Balancer and S3 bucket for clues to vulnerabilities, leading to an RCE exploit on a vulnerable web app which exposes confidential files and culminates in access to the scenarioâ€™s goal: a highly-secured RDS database instance.
 
 Alternatively, the attacker may start as the IAM user McDuck and enumerate S3 buckets, eventually leading to SSH keys which grant direct access to the EC2 server and the database beyond.
 
